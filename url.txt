@@ -13,3 +13,118 @@ asEnuda
 https://www.youtube.com/@mrbruff
 
 https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+Github https://github.com/Oluwatosin2006/OpencartV1.git
+
+john
+https://585008049193.signin.aws.amazon.com/console
+
+
+userdata
+
+#!/bin/bash 
+# Use this for your user data (script from top to bottom) 
+# install httpd (Linux 2 version) 
+yum update - y 
+yum install -y httpd 
+systemctl start httpd 
+systemctl enable httpd 
+echo "<h1 >Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
+
+deleting
+
+import json 
+import boto3  
+def lambda_handler(event, context) : 
+ client = boto3. client('s3') 
+ response = client. delete_bucket( 
+ Bucket= 'rajtheultimatetrainer') 
+ returni {
+ 'statuscode': 200, 
+ 'body': json.dumps('Hello from Lambda!')
+}
+
+creating metadata and store in Dynamic DB table
+
+import boto3 
+from uuid inport unid4 
+def lambda_handler(event, context): 
+      s3 = boto3.client ("s3") 
+      dynamodb = boto3.resource('dynamodb') 
+      for record in event['Records']: 
+            bucket_name = record['s3']['bucket']['name'] 
+            object_key = record['s3']['object']['key'] 
+            size = record['s3']['object'].get('size', -1) 
+            event_name = record ['eventName'] 
+            event_time = record['eventTine'] 
+            dynanoTable = dynamodb.Table('newtable') 
+            dynanoTable.put_item( 
+                  Item={'unique': str(uuid4()), 'Bucket': 
+bucket_name, 'Object': object_key, 'Size': size, 'Event': 
+event_name, 'EventTime': event_time}) 
+
+
+https://github.com/pavanoltraining/OpencartV121.git
+https://github.com/Oluwatosin2006/SeleniumFrameworkFromScratch.git
+
+my github url: https://github.com/Oluwatosin2006?tab=repositories
+
+
+http://demo.guru99.com/v4/index.php
+
+mngr585996
+
+asEnuda
+
+https://www.youtube.com/@mrbruff
+
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+Github https://github.com/Oluwatosin2006/OpencartV1.git
+
+john
+https://585008049193.signin.aws.amazon.com/console
+
+
+userdata
+
+#!/bin/bash 
+# Use this for your user data (script from top to bottom) 
+# install httpd (Linux 2 version) 
+yum update - y 
+yum install -y httpd 
+systemctl start httpd 
+systemctl enable httpd 
+echo "<h1 >Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
+
+deleting
+
+import json 
+import boto3  
+def lambda_handler(event, context) : 
+ client = boto3. client('s3') 
+ response = client. delete_bucket( 
+ Bucket= 'rajtheultimatetrainer') 
+ returni {
+ 'statuscode': 200, 
+ 'body': json.dumps('Hello from Lambda!')
+}
+
+creating metadata and store in Dynamic DB table
+
+import boto3 
+from uuid inport unid4 
+def lambda_handler(event, context): 
+      s3 = boto3.client ("s3") 
+      dynamodb = boto3.resource('dynamodb') 
+      for record in event['Records']: 
+            bucket_name = record['s3']['bucket']['name'] 
+            object_key = record['s3']['object']['key'] 
+            size = record['s3']['object'].get('size', -1) 
+            event_name = record ['eventName'] 
+            event_time = record['eventTine'] 
+            dynanoTable = dynamodb.Table('newtable') 
+            dynanoTable.put_item( 
+                  Item={'unique': str(uuid4()), 'Bucket': 
+bucket_name, 'Object': object_key, 'Size': size, 'Event': 
+event_name, 'EventTime': event_time}) 
